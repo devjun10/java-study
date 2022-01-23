@@ -24,7 +24,9 @@ BiFunction<Integer, Integer, Integer> adder = Integer::sum; //동일
 adder.apply(a, b);
 
 ```
-![img.png](img.png)
+
+![](img/img.png)
+
 
 <br>
 
@@ -42,7 +44,7 @@ System.out.println("alphabets = " + alphabets); //abc def ghi
 ```
 <br>
 
-![img_2.png](img_2.png)
+![](img/img_1.png)
 static메서드가 아니고 인스턴스의 메서드인 것을 확인할 수 있다.
 
 
