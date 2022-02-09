@@ -1,3 +1,5 @@
+package study1;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +14,7 @@ public class Example2 {
 
         List<Apple> appleBox = List.of(apple1, apple2, apple3, apple4, apple5);
 
-        // List<Apple> filteredBox = filterApplesByColor(appleBox,"red");
+        // List<study1.Apple> filteredBox = filterApplesByColor(appleBox,"red");
         List<Apple> filteredBox = filterApplesByColorAndWeight(appleBox, "red", 200);
 
         filteredBox.forEach(System.out::println);

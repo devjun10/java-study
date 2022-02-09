@@ -1,4 +1,5 @@
-import java.util.ArrayList;
+package study1;
+
 import java.util.List;
 import java.util.stream.Collectors;
 

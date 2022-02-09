@@ -26,18 +26,20 @@
 특정 메소드 코드를 캡슐화하여 런타임에 원하는 전략을 선택하도록 하는 것을 전략패턴이라고 합니다.
 
 ```java
+import study1.Apple;
+
 public interface ApplePredicate {
     boolean test(Apple apple, Apple compare);
 }
 
-public class AppleColorPredicate implements ApplePredicate {
+public class study1.AppleColorPredicate implements study1.ApplePredicate {
     @Override
     public boolean test(Apple apple, Apple compare) {
         return apple.getColor().equals(compare.getColor());
     }
 }
 
-public class AppleWeightPredicate implements ApplePredicate {
+public class study1.AppleWeightPredicate implements study1.ApplePredicate {
     @Override
     public boolean test(Apple apple, Apple compare) {
         return apple.getWeight() > compare.getWeight(); // compare에 150g이 포함
@@ -45,8 +47,8 @@ public class AppleWeightPredicate implements ApplePredicate {
 }
 ```
 
-- 사용자가 원하는 기준에 따라 ApplePredicate 객체를 넘겨 필터 조건에 사용할 수 있다.
-- 조건이 추가되어도 ApplePredicate 구현체를 생성해서 필터 조건을 만들어 넘겨주면 된다..
+- 사용자가 원하는 기준에 따라 study1.ApplePredicate 객체를 넘겨 필터 조건에 사용할 수 있다.
+- 조건이 추가되어도 study1.ApplePredicate 구현체를 생성해서 필터 조건을 만들어 넘겨주면 된다..
 
 - 하지만 매번 조건이 추가될때마다 일반 클래스를 계속해서 구현해야만 한다.
 - 사실은 단순히 if 조건문만 있으면 되는데 너무나 많은 불필요한 코드가 필요하다.

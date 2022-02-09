@@ -1,3 +1,5 @@
+package study1;
+
 public class Apple {
 
     private String color;
@@ -18,7 +20,7 @@ public class Apple {
 
     @Override
     public String toString() {
-        return "Apple{" +
+        return "study1.Apple{" +
                 "color='" + color + '\'' +
                 ", weight=" + weight +
                 '}';
