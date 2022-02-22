@@ -27,7 +27,7 @@
 |**getDeclaredConstructors()**|Constructor[]|접근 제어자에 상관없이 모든 생성자들을 Constructor배열로 반환. 부모 클래스의 생성자들은 반환하지 않는다.|
 |**getDeclaredMethod()**|Method[]|접근 제어자에 상관없이 모든 메서드들을 Method배열로 반환. 부모 클래스의 메서드들은 반환하지 않는다.|
 
-**애노테이션 정보를 얻기위한 메서드들.**
+**애노테이션 정보를 얻기위한 메서드들**
 
 |리턴타입|메서드명|설명|
 |:------|:---:|:------:|
@@ -69,8 +69,8 @@ public @interface MyAnnotation{
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
-public @interface MyAnnotation{
-	int number() default 500; // int 타입(기본형)
+public @interface MyAnnotation{ 
+    int number() default 500; // int 타입(기본형)
     String value(); 		// String
     String[] arr();			// 배열로 생성
     Operation opration();	// Enum 타입
@@ -137,7 +137,7 @@ public @interface Target{
     @Target({ElementType.TYPE, ElementType.FIELD, ElementType.METHOD})
     요소타입이 ElementType[] 배열이기 때문에 적용가능한 대상을 여러 개의 값을 지정할 수 있다.
 
-✅**@Target으로 지정할 수 있는 애너테이션 적용대상의 종류**
+✅ **@Target으로 지정할 수 있는 애너테이션 적용대상의 종류**
 
 |ElementType|대상 타입|
 |:------|:---|
@@ -257,7 +257,7 @@ class MyClass{
 }
 ~~~
 
-✅**@Target으로 지정할 수 있는 애너테이션 적용대상의 종류**
+✅ **@Target으로 지정할 수 있는 애너테이션 적용대상의 종류**
 
 |ElementType|대상 타입|
 |:------|:---|
@@ -276,8 +276,8 @@ class MyClass{
 
 @ExAnnotation // ElementType.TYPE
 public class ExClass {
-
-	@ExAnnotation // ElementType.FIELD
+    
+    @ExAnnotation // ElementType.FIELD
     int num;
     
     @ExAnnotation // ElementType.TYPE_USE
@@ -308,7 +308,6 @@ public class ExClass {
 - 위와 같은 이유로 필수는 아니지만 붙이는 것이 에러방지 측면에서 좋다.
 
 ~~~java
-
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.SOURCE)
 public @interface Override
@@ -377,7 +376,8 @@ public interface Runnable {
 
 
 
-✅**@SuppressWarnings의 토큰종류**
+✅ **@SuppressWarnings의 토큰종류**
+
 (**@SuppressWarnings("토큰")** 형태로 사용한다.)
 
 |토큰|설명|
@@ -409,8 +409,8 @@ public interface Runnable {
 ~~~java
 
 class MyThread extends Thread {
-
-	@SuppressWarnings("deprecation") // 에러 메시지 억제
+    
+    @SuppressWarnings("deprecation") // 에러 메시지 억제
     @Override
     public void run() {
     	stop();
