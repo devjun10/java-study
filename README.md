@@ -1,8 +1,12 @@
 ## ✨ 자바 스터디
 
-자바 학습을 위한 스터디
+코드스쿼드 마스터스 코스 자바 추가 학습 스터디. `개인 공부`, `발표 능력 향상` 을 위해 각자가 한 주간 공부한 내용을 발표합니다.
 
-[노리](), [반스](), [포키](), [BC](),[Jun](), [Meenzino](), [Pio](), [Phil]()  
+[@노리](https://github.com/nohriter), [@반스](https://github.com/ffinn92), [@포키](https://github.com/Seokho-Ham), [@BC](https://github.com/honeySleepr), [@Jun](https://github.com/devjun10), [@Meenzino](https://github.com/Minzino), [@Pio](https://github.com/NB993), [@Phil](https://github.com/PhilSoGooood)
+
+
+
+  
 
 
 <br/><br/>
