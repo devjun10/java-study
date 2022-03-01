@@ -12,4 +12,8 @@ public class MyClass {
     public String getValue() {
         return value;
     }
+
+    public Optional<String> getOptionalValue() {
+        return Optional.ofNullable(value);
+    }
 }
