@@ -5,6 +5,8 @@ import java.util.Optional;
 public class MyClass {
     private String value;
 
+    public MyClass() {}
+
     public MyClass(String value) {
         this.value = value;
     }
