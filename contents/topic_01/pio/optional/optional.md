@@ -118,9 +118,27 @@ void orElseGet_test() {
 `orElseThrow()`
 
 값이 없을 때의 대안이 없는 경우 예외를 발생시키는 것도 방법이 될 수 있다.
+1. `orElseThrow(Supplier<? extends X> exceptionSupplier)`
+<br> 람다식으로 발생시킬 예외를 지정할 수 있다.
+
+
+2. `orElseThrow()`
+<br> NoSuchElement 예외를 발생시킨다.
+```java
+//javadoc
+public T orElseThrow() {
+    if (value == null) {
+        throw new NoSuchElementException("No value present");
+    }
+    return value;
+}
+```
 ```java
 Optional<MyClass> myClass = optionalExample.getMyClass();
-myClass.orElseThrow(IllegalAccessError::new);
+
+
+myClass.orElseThrow(IllegalAccessError::new); //1번
+myClass.orElseThrow(); //2번
 ```
 
 <br><br>
